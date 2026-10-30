@@ -28,6 +28,11 @@ npm test && npm run typecheck
 ## Status
 🟡 Academic beta, single developer. Real user emails in fixtures were replaced with placeholders; the Supabase project reference was removed, so you must bring your own project. Tests were not re-run in this copy. Subscription model notes in `Modelo de Suscripción UNAB OS.md` are a proposal, not a live product.
 
+## Consolidation note
+This repo was compared file by file (blob hashes) against the private `universidad-os` source. The public tree already contains everything newer from it: the private repo's last commit predates this tree, and it holds no source, test or doc file missing here. Private history, local tool configs and personal data were intentionally not imported. Test fixtures that had been sanitized into non-institutional placeholder emails were repaired so the suite matches the `@unab.edu.co` domain rule (`student@unab.edu.co` is a placeholder).
+
+Verified on 2026-10-30: `npm ci`, `vitest run` (55 files, 283 passed, 1 skipped) and `tsc --noEmit` pass. Not verified: Playwright e2e, `test:db` (needs local Supabase), Python workers, and any live Supabase/Telegram/Railway deployment.
+
 ## Folder guide
 
 | Folder | What it holds |

@@ -43,13 +43,13 @@ describe("UNAB passwordless login", () => {
 
     const result = await authForm.authenticateDirectInstitutionalEmail({
       client: { auth: { signInWithPassword, signUp } },
-      email: " ANA@UNAB.EDU.CO ",
+      email: " STUDENT@UNAB.EDU.CO ",
     });
 
     expect(result).toBe("success");
     expect(signInWithPassword).toHaveBeenCalledWith({
-      email: "user9@example.edu",
-      password: authForm.deriveInternalEmailPassword("user9@example.edu"),
+      email: "student@unab.edu.co",
+      password: authForm.deriveInternalEmailPassword("student@unab.edu.co"),
     });
 
     const invalidResult = await authForm.authenticateDirectInstitutionalEmail({
@@ -70,11 +70,11 @@ describe("UNAB passwordless login", () => {
 
     await expect(requestInstitutionalMagicLink({
       client: { auth: { signInWithOtp } },
-      email: " ANA@UNAB.EDU.CO ",
+      email: " STUDENT@UNAB.EDU.CO ",
       origin: "https://unab.example",
     })).resolves.toBe("sent");
     expect(signInWithOtp).toHaveBeenCalledWith({
-      email: "user9@example.edu",
+      email: "student@unab.edu.co",
       options: { emailRedirectTo: "https://unab.example/auth/callback?next=/materias" },
     });
 

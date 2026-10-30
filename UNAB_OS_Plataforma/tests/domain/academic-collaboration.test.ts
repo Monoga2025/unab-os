@@ -11,7 +11,7 @@ import {
 
 describe("academic collaboration domain rules", () => {
   it("normalizes and validates institutional email addresses", () => {
-    expect(normalizeInstitutionalEmail(" ANA@UNAB.EDU.CO ")).toBe("user9@example.edu");
+    expect(normalizeInstitutionalEmail(" STUDENT@UNAB.EDU.CO ")).toBe("student@unab.edu.co");
     expect(normalizeInstitutionalEmail("user10@example.edu")).toBeNull();
     expect(normalizeInstitutionalEmail("ana@example.com")).toBeNull();
   });
