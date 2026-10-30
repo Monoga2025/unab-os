@@ -1,0 +1,2 @@
+[console_scripts]
+jarvis-telegram = jarvis.bot:main

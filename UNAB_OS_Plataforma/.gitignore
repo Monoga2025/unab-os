@@ -1,0 +1,23 @@
+.atl/
+node_modules/
+.next/
+.netlify/
+*.tsbuildinfo
+.env
+.env.*
+!.env.example
+.env*.local
+data/
+deployment/jarvis/.venv/
+deployment/jarvis/data/
+deployment/jarvis/**/__pycache__/
+deployment/jarvis/**/*.py[cod]
+**/__pycache__/
+*.py[cod]
+supabase/.temp/
+
+# Local Netlify folder
+.netlify
+
+# Local isolated implementation worktrees
+.worktrees/

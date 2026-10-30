@@ -1,0 +1,11 @@
+FROM python:3.12-slim-bookworm
+LABEL org.opencontainers.image.title="Universidad OS TEMA Sync"
+WORKDIR /app
+ENV PYTHONUNBUFFERED=1 PYTHONDONTWRITEBYTECODE=1
+COPY scripts/requirements-tema-sync.txt ./scripts/requirements-tema-sync.txt
+RUN apt-get update \
+  && apt-get install -y --no-install-recommends poppler-utils \
+  && rm -rf /var/lib/apt/lists/* \
+  && pip install --no-cache-dir -r scripts/requirements-tema-sync.txt
+COPY scripts ./scripts
+CMD ["python", "scripts/sync_tema_cloud.py"]

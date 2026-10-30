@@ -1,0 +1,3632 @@
+/* ==========================================================================
+   UNINOVA MODERN SAAS EDUCATIONAL DESIGN SYSTEM (PRO MAX LUXURY STANDARD)
+   ========================================================================== */
+
+.uninova-saas-container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 8px 16px 32px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: #1e293b;
+  box-sizing: border-box;
+}
+
+.uninova-saas-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 280px;
+  gap: 16px;
+  align-items: start;
+  width: 100%;
+}
+
+.uninova-saas-main {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  min-width: 0;
+}
+
+.uninova-saas-aside {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 0;
+  width: 280px;
+}
+
+/* Macro Sections & Distinct Containers */
+.uninova-macro-block {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border-radius: 18px;
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+/* 1. Macro Hero Priority: High Contrast, Sharp Border, Distinctive Elevation */
+.uninova-macro-block.macro-priority {
+  background: transparent;
+  gap: 8px;
+}
+
+.uninova-macro-header-kicker {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 2px;
+}
+
+.uninova-kicker-tag {
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  padding: 3px 10px;
+  border-radius: 6px;
+}
+
+.uninova-kicker-tag.urgent {
+  background: #fef2f2;
+  color: #dc2626;
+  border: 1px solid #fecaca;
+  box-shadow: 0 1px 4px rgba(220, 38, 38, 0.08);
+}
+
+.uninova-kicker-sub {
+  font-size: 12.5px;
+  color: #64748b;
+  font-weight: 500;
+}
+
+/* 2. Macro Agenda: Distinct Soft Tinted Canvas */
+.uninova-macro-block.macro-agenda {
+  background: #f8fafc;
+  border: 1px solid #f1f5f9;
+  padding: 22px 24px 24px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.02);
+}
+
+/* 3. Macro Performance & Evaluations: Crisp Card Surface with Dual Subgrid */
+.uninova-macro-block.macro-performance-eval {
+  background: #fdfdfe;
+  border: 1px solid #f1f5f9;
+  padding: 22px 24px 24px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.02);
+}
+
+/* 4. Macro Tools: Muted Mosaic Utility Deck */
+.uninova-macro-block.macro-tools {
+  background: #f8fafc;
+  border: 1px solid #f1f5f9;
+  padding: 20px 22px 22px;
+  border-radius: 16px;
+}
+
+/* Macro Headers with Title and Subtitle */
+.uninova-macro-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 16px;
+  padding-bottom: 4px;
+}
+
+.uninova-macro-header.compact {
+  align-items: center;
+  padding-bottom: 0;
+}
+
+.uninova-macro-title {
+  font-size: 19px;
+  font-weight: 800;
+  letter-spacing: -0.3px;
+  color: #0f172a;
+  margin: 0;
+}
+
+.uninova-macro-title.sm {
+  font-size: 17px;
+}
+
+.uninova-macro-subtitle {
+  font-size: 13px;
+  color: #64748b;
+  margin: 3px 0 0;
+}
+
+/* Greeting Bar */
+.uninova-greeting-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 4px 0 2px;
+}
+
+.uninova-greeting-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.uninova-sun-icon {
+  font-size: 32px;
+  line-height: 1;
+  filter: drop-shadow(0 2px 8px rgba(234, 179, 8, 0.3));
+}
+
+.uninova-greeting-title {
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  color: #0f172a;
+  margin: 0;
+}
+
+.uninova-greeting-subtitle {
+  font-size: 13.5px;
+  color: #64748b;
+  margin: 3px 0 0;
+}
+
+.uninova-greeting-quote {
+  font-size: 13px;
+  font-style: italic;
+  color: #64748b;
+  text-align: right;
+  max-width: 320px;
+  line-height: 1.45;
+}
+
+/* Hero Priority Card */
+.uninova-hero-priority-card {
+  background: #ffffff;
+  border: 1px solid #f1f5f9;
+  border-radius: 16px;
+  padding: 24px;
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) 180px 220px;
+  gap: 24px;
+  align-items: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+  position: relative;
+  overflow: hidden;
+}
+
+.uninova-hero-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.uninova-hero-badges {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.uninova-pill-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 20px;
+  letter-spacing: 0.5px;
+}
+
+.uninova-pill-badge.blue {
+  background: #e0f2fe;
+  color: #0284c7;
+  border: 1px solid #bae6fd;
+}
+
+.uninova-pill-badge.red {
+  background: #ffe4e6;
+  color: #e11d48;
+  border: 1px solid #fecdd3;
+}
+
+.uninova-pill-badge.xs {
+  font-size: 10px;
+  padding: 2px 8px;
+}
+
+.uninova-live-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #0284c7;
+  box-shadow: 0 0 6px #0284c7;
+}
+
+.uninova-hero-title {
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: -0.3px;
+  color: #0f172a;
+  margin: 0 0 8px;
+  line-height: 1.3;
+}
+
+.uninova-hero-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  font-size: 13px;
+  color: #64748b;
+  margin-bottom: 10px;
+}
+
+.uninova-grade-weight {
+  font-weight: 700;
+  color: #4f46e5;
+}
+
+.dot-sep {
+  color: #cbd5e1;
+}
+
+.uninova-hero-desc {
+  font-size: 13px;
+  color: #475569;
+  margin: 0 0 16px;
+  line-height: 1.5;
+}
+
+.uninova-hero-progress-block {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.uninova-hero-progress-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #64748b;
+}
+
+.uninova-hero-progress-labels strong {
+  color: #ea580c;
+  font-weight: 700;
+}
+
+.uninova-progress-track {
+  height: 8px;
+  background: #f1f5f9;
+  border-radius: 99px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.uninova-progress-track.sm {
+  height: 6px;
+}
+
+.uninova-progress-fill {
+  height: 100%;
+  border-radius: 99px;
+}
+
+.uninova-progress-fill.orange {
+  background: linear-gradient(90deg, #f97316, #ea580c);
+}
+
+.uninova-progress-fill.blue {
+  background: linear-gradient(90deg, #6366f1, #4f46e5);
+}
+
+.uninova-hero-graphic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.uninova-mechanism-svg {
+  width: 100%;
+  max-width: 180px;
+  height: auto;
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.05));
+}
+
+.uninova-hero-actions-box {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.uninova-hero-deadline-badge {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 4px;
+}
+
+.uninova-cal-icon {
+  font-size: 22px;
+}
+
+.uninova-deadline-label {
+  display: block;
+  font-size: 11px;
+  color: #64748b;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.uninova-deadline-time {
+  display: block;
+  font-size: 15px;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.uninova-deadline-date {
+  display: block;
+  font-size: 11px;
+  color: #64748b;
+}
+
+/* Primary, Secondary, Ghost Buttons (High Contrast & Clear Boundaries) */
+.uninova-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 18px;
+  border-radius: 9px;
+  background: #0f172a;
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 13px;
+  text-decoration: none;
+  border: 1px solid #0f172a;
+  cursor: pointer;
+  box-shadow: 0 3px 10px rgba(15, 23, 42, 0.2);
+  transition: all 0.15s ease;
+}
+
+.uninova-btn-primary:hover {
+  background: #1e293b;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(15, 23, 42, 0.25);
+}
+
+.uninova-btn-primary.accent {
+  background: #2563eb;
+  border-color: #1d4ed8;
+  box-shadow: 0 3px 10px rgba(37, 99, 235, 0.25);
+}
+
+.uninova-btn-primary.accent:hover {
+  background: #1d4ed8;
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.35);
+}
+
+.uninova-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 9px 16px;
+  border-radius: 9px;
+  background: #ffffff;
+  color: #1e293b;
+  font-weight: 700;
+  font-size: 12.5px;
+  text-decoration: none;
+  border: 1.5px solid #cbd5e1;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  transition: all 0.15s ease;
+}
+
+.uninova-btn-secondary:hover {
+  background: #f8fafc;
+  border-color: #94a3b8;
+  color: #0f172a;
+  transform: translateY(-1px);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+.uninova-btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border-radius: 8px;
+  background: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  color: #475569;
+  font-weight: 700;
+  font-size: 12px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.uninova-btn-ghost:hover {
+  color: #0f172a;
+  background: #e2e8f0;
+  border-color: #cbd5e1;
+}
+
+.full-w {
+  width: 100%;
+}
+
+/* Sections & Headers */
+.uninova-section {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.uninova-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.uninova-section-title-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.uninova-section-icon {
+  font-size: 18px;
+}
+
+.uninova-section-title {
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: -0.2px;
+  color: #0f172a;
+  margin: 0;
+}
+
+.uninova-link-btn {
+  background: transparent;
+  border: none;
+  color: #4f46e5;
+  font-size: 12.5px;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+.uninova-link-btn:hover {
+  text-decoration: underline;
+}
+
+/* Schedule Row (4 Cards) */
+.uninova-schedule-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+.uninova-schedule-card {
+  border-radius: 14px;
+  padding: 16px;
+  border: 1px solid;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.uninova-schedule-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.04);
+}
+
+.uninova-schedule-card.blue {
+  background: #f0f9ff;
+  border-color: #bae6fd;
+}
+
+.uninova-schedule-card.green {
+  background: #f0fdf4;
+  border-color: #bbf7d0;
+}
+
+.uninova-schedule-card.purple {
+  background: #faf5ff;
+  border-color: #e9d5ff;
+}
+
+.uninova-schedule-card.rose {
+  background: #fff1f2;
+  border-color: #fecdd3;
+}
+
+.uninova-schedule-card-top {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 2px;
+}
+
+.uninova-class-icon {
+  font-size: 16px;
+}
+
+.uninova-class-time {
+  font-size: 11.5px;
+  font-weight: 700;
+  color: #475569;
+}
+
+.uninova-class-name {
+  font-size: 15px;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.uninova-class-location,
+.uninova-class-prof {
+  font-size: 12px;
+  color: #64748b;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.uninova-class-badge {
+  display: inline-block;
+  align-self: flex-start;
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-size: 10.5px;
+  font-weight: 700;
+  margin-top: 6px;
+}
+
+.uninova-class-badge.blue {
+  background: #e0f2fe;
+  color: #0284c7;
+}
+
+.uninova-class-badge.green {
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+.uninova-class-badge.purple {
+  background: #f3e8ff;
+  color: #9333ea;
+}
+
+.uninova-class-badge.rose {
+  background: #ffe4e6;
+  color: #e11d48;
+}
+
+/* 2-Column Dual Subgrid */
+.uninova-dual-subgrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.uninova-subcard {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.02);
+}
+
+.uninova-subcard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.uninova-subcard-title {
+  font-size: 17px;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0;
+}
+
+/* Compact Deliveries List */
+.uninova-compact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.uninova-delivery-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: #f8fafc;
+  border: 1px solid #f1f5f9;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.15s ease;
+}
+
+.uninova-delivery-row:hover {
+  background: #f1f5f9;
+  border-color: #e2e8f0;
+  transform: translateX(2px);
+}
+
+.uninova-delivery-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+
+.uninova-delivery-icon.red {
+  background: #ffe4e6;
+  color: #e11d48;
+}
+
+.uninova-delivery-icon.blue {
+  background: #e0f2fe;
+  color: #0284c7;
+}
+
+.uninova-delivery-icon.purple {
+  background: #f3e8ff;
+  color: #9333ea;
+}
+
+.uninova-delivery-icon.green {
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+.uninova-delivery-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.uninova-delivery-name {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  color: #0f172a;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.uninova-delivery-course {
+  display: block;
+  font-size: 11.5px;
+  color: #64748b;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.uninova-delivery-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.uninova-delivery-date {
+  font-size: 12px;
+  color: #64748b;
+  font-weight: 600;
+}
+
+.uninova-chevron {
+  color: #94a3b8;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* Performance Donut & Breakdown */
+.uninova-performance-body {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 20px;
+  align-items: center;
+}
+
+.uninova-donut-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.uninova-donut-gauge {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background: conic-gradient(#4f46e5 0% 64%, #e2e8f0 64% 100%);
+  display: grid;
+  place-items: center;
+  box-shadow: 0 4px 16px rgba(79, 70, 229, 0.15);
+}
+
+.uninova-donut-center {
+  width: 86px;
+  height: 86px;
+  border-radius: 50%;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.uninova-donut-val {
+  font-size: 24px;
+  font-weight: 900;
+  color: #0f172a;
+  line-height: 1;
+}
+
+.uninova-donut-lbl {
+  font-size: 9.5px;
+  color: #64748b;
+  font-weight: 600;
+  margin-top: 3px;
+  text-transform: uppercase;
+}
+
+.uninova-performance-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.uninova-progress-stat-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12.5px;
+  color: #475569;
+}
+
+.uninova-progress-stat-row strong {
+  color: #0f172a;
+}
+
+.uninova-stats-breakdown {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.uninova-stats-breakdown li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: #475569;
+}
+
+.uninova-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.uninova-dot.green {
+  background: #22c55e;
+}
+
+.uninova-dot.blue {
+  background: #3b82f6;
+}
+
+.uninova-dot.orange {
+  background: #f97316;
+}
+
+.uninova-stat-label {
+  flex: 1;
+}
+
+.uninova-stat-num {
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.uninova-performance-quote {
+  font-size: 11.5px;
+  font-style: italic;
+  color: #64748b;
+  text-align: center;
+  padding-top: 8px;
+  border-top: 1px solid #f1f5f9;
+}
+
+/* Quick Access Cards Grid */
+.uninova-quick-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.uninova-quick-section-title {
+  font-size: 17px;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0;
+}
+
+.uninova-quick-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+}
+
+.uninova-quick-card {
+  border-radius: 12px;
+  padding: 14px;
+  border: 1px solid;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  background: #ffffff;
+  transition: all 0.15s ease;
+}
+
+.uninova-quick-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+}
+
+.uninova-quick-card.purple {
+  background: #faf5ff;
+  border-color: #e9d5ff;
+}
+
+.uninova-quick-card.blue {
+  background: #f0f9ff;
+  border-color: #bae6fd;
+}
+
+.uninova-quick-card.green {
+  background: #f0fdf4;
+  border-color: #bbf7d0;
+}
+
+.uninova-quick-card.orange {
+  background: #fff7ed;
+  border-color: #fed7aa;
+}
+
+.uninova-quick-card.red {
+  background: #fff1f2;
+  border-color: #fecdd3;
+}
+
+.uninova-quick-icon {
+  font-size: 20px;
+}
+
+.uninova-quick-text {
+  flex: 1;
+  min-width: 0;
+  text-align: left;
+}
+
+.uninova-quick-name {
+  display: block;
+  font-size: 13px;
+  font-weight: 800;
+  color: #0f172a;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.uninova-quick-desc {
+  display: block;
+  font-size: 11px;
+  color: #64748b;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.uninova-quick-arrow {
+  font-size: 16px;
+  color: #94a3b8;
+  font-weight: 700;
+}
+
+/* RIGHT COLUMN: JARVIS CARD */
+.uninova-jarvis-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.03);
+}
+
+.uninova-jarvis-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.uninova-jarvis-title-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.uninova-jarvis-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #0f172a, #334155);
+  color: #ffffff;
+  display: grid;
+  place-items: center;
+}
+
+.uninova-jarvis-avatar.pro {
+  background: linear-gradient(135deg, #6366f1, #4f46e5);
+  box-shadow: 0 0 16px rgba(99, 102, 241, 0.4);
+}
+
+.uninova-jarvis-name-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.uninova-jarvis-name {
+  font-size: 16px;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0;
+}
+
+.uninova-pro-badge {
+  font-size: 9.5px;
+  font-weight: 800;
+  padding: 2px 7px;
+  border-radius: 4px;
+  background: #fef3c7;
+  color: #92400e;
+  border: 1px solid #fde68a;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.uninova-beta-badge {
+  font-size: 9px;
+  font-weight: 800;
+  padding: 1px 5px;
+  border-radius: 4px;
+  background: #e0e7ff;
+  color: #4338ca;
+  text-transform: uppercase;
+}
+
+.uninova-jarvis-role {
+  font-size: 11px;
+  color: #64748b;
+  font-weight: 600;
+  margin: 2px 0 0;
+}
+
+.uninova-video-toggle-btn {
+  background: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 4px 8px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #475569;
+  cursor: pointer;
+}
+
+.uninova-jarvis-hud-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border: none;
+  border-radius: 14px;
+  padding: 6px 0;
+  box-shadow: none;
+}
+
+.uninova-jarvis-bubble {
+  background: #f1f5f9;
+  border-radius: 12px 12px 12px 2px;
+  padding: 12px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #1e293b;
+  line-height: 1.4;
+}
+
+.uninova-jarvis-bubble.pro-mode {
+  background: #f8fafc;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 12px;
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.uninova-jarvis-bubble-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11.5px;
+  color: #1e293b;
+  font-weight: 800;
+}
+
+.uninova-jarvis-bubble.pro-mode p {
+  margin: 0;
+  font-size: 11.5px;
+  color: #475569;
+  line-height: 1.45;
+  font-weight: 500;
+}
+
+.uninova-pulse-live {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #10b981;
+  box-shadow: 0 0 8px #10b981;
+  display: inline-block;
+}
+
+.uninova-jarvis-pro-cta-wrap {
+  margin: 2px 0;
+}
+
+.uninova-jarvis-chips-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.uninova-chip-btn {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 8px 10px;
+  font-size: 11.5px;
+  font-weight: 600;
+  color: #334155;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.uninova-chip-btn:hover {
+  background: #f8fafc;
+  border-color: #cbd5e1;
+  color: #4f46e5;
+}
+
+.uninova-jarvis-response {
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 12.5px;
+  color: #166534;
+  line-height: 1.5;
+}
+
+.uninova-jarvis-response.thinking {
+  background: #f0f9ff;
+  border-color: #bae6fd;
+  color: #0369a1;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.uninova-spin-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #0284c7;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 1; }
+}
+
+.uninova-jarvis-input-form {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  padding: 4px 6px 4px 12px;
+}
+
+.uninova-jarvis-input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 12.5px;
+  color: #0f172a;
+}
+
+.uninova-jarvis-send-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  border: none;
+  background: #4f46e5;
+  color: #ffffff;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.uninova-jarvis-send-btn:disabled {
+  background: #cbd5e1;
+  cursor: not-allowed;
+}
+
+/* RIGHT COLUMN: CALENDAR CARD */
+.uninova-calendar-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.uninova-calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.uninova-calendar-title {
+  font-size: 15px;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0;
+}
+
+.uninova-calendar-nav {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.uninova-cal-arrow {
+  background: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  width: 26px;
+  height: 26px;
+  display: grid;
+  place-items: center;
+  font-size: 14px;
+  cursor: pointer;
+  color: #475569;
+}
+
+.uninova-cal-today-btn {
+  background: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 2px 8px;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+  color: #475569;
+}
+
+.uninova-calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+  text-align: center;
+}
+
+.uninova-calendar-grid.header span {
+  font-size: 11px;
+  font-weight: 700;
+  color: #94a3b8;
+  padding: 4px 0;
+}
+
+.uninova-cal-day {
+  background: transparent;
+  border: none;
+  font-size: 12px;
+  color: #334155;
+  font-weight: 600;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  transition: all 0.15s ease;
+}
+
+.uninova-cal-day:hover {
+  background: #f1f5f9;
+}
+
+.uninova-cal-day.selected {
+  background: #4f46e5;
+  color: #ffffff;
+  font-weight: 800;
+  box-shadow: 0 2px 8px rgba(79, 70, 229, 0.35);
+}
+
+.uninova-cal-selected-events {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #f1f5f9;
+}
+
+.uninova-cal-events-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  color: #0f172a;
+}
+
+.uninova-event-count {
+  font-size: 11px;
+  color: #64748b;
+  background: #f1f5f9;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.uninova-tema-legend-pill {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(147, 51, 234, 0.05);
+  border: 1px solid rgba(147, 51, 234, 0.2);
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 11px;
+  color: #7e22ce;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.tema-dot-indicator {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #9333ea;
+  flex-shrink: 0;
+}
+
+.uninova-day-events-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.uninova-cal-event-card {
+  border-radius: 12px;
+  padding: 10px 12px;
+  transition: all 0.2s ease;
+}
+
+/* TEMA Unconfirmed Event: Light purple transparent canvas, dashed purple border, muted grey content */
+.uninova-cal-event-card.tema-unconfirmed {
+  background: rgba(168, 85, 247, 0.06);
+  border: 1.5px dashed #c084fc;
+  box-shadow: 0 2px 8px rgba(168, 85, 247, 0.04);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.uninova-tema-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.uninova-tema-card-header.confirmed {
+  margin-bottom: 6px;
+}
+
+.uninova-tema-kicker-badge {
+  font-size: 10px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  background: #f3e8ff;
+  color: #7e22ce;
+  border: 1px solid #d8b4fe;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.uninova-status-muted {
+  font-size: 10px;
+  color: #94a3b8;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.uninova-tema-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.uninova-tema-event-title {
+  font-size: 12px;
+  font-weight: 700;
+  color: #64748b; /* Gris clarito descriptivo */
+  line-height: 1.3;
+}
+
+.uninova-tema-event-loc {
+  font-size: 10.5px;
+  color: #94a3b8;
+}
+
+.uninova-tema-event-time {
+  font-size: 11px;
+  font-weight: 600;
+  color: #94a3b8;
+  margin-top: 2px;
+}
+
+.uninova-tema-card-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2px;
+}
+
+.uninova-btn-confirm-tema {
+  background: #9333ea;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 5px 10px;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(147, 51, 234, 0.25);
+  transition: all 0.15s ease;
+}
+
+.uninova-btn-confirm-tema:hover {
+  background: #7e22ce;
+  transform: translateY(-1px);
+}
+
+/* Confirmed Event: Clean solid enabled state */
+.uninova-cal-event-card.confirmed {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+}
+
+.uninova-confirmed-badge {
+  font-size: 9.5px;
+  font-weight: 800;
+  text-transform: uppercase;
+  background: #e0f2fe;
+  color: #0284c7;
+  border: 1px solid #bae6fd;
+  padding: 2px 6px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.uninova-event-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+}
+
+.uninova-event-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.uninova-event-info strong {
+  display: block;
+  font-size: 12px;
+  color: #0f172a;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.uninova-event-info small {
+  display: block;
+  font-size: 10.5px;
+  color: #64748b;
+}
+
+.uninova-event-time {
+  font-size: 11px;
+  color: #64748b;
+  flex-shrink: 0;
+}
+
+/* RIGHT COLUMN: TEACHERS CARD */
+.uninova-teachers-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.uninova-teachers-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.uninova-teachers-title {
+  font-size: 15px;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0;
+}
+
+.uninova-teachers-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.uninova-teacher-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 0;
+}
+
+.uninova-avatar-initials {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #e0e7ff;
+  color: #4338ca;
+  font-size: 11.5px;
+  font-weight: 800;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+
+.uninova-avatar-initials.md {
+  width: 36px;
+  height: 36px;
+  font-size: 12px;
+}
+
+.uninova-avatar-initials.lg {
+  width: 44px;
+  height: 44px;
+  font-size: 15px;
+}
+
+.uninova-teacher-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.uninova-teacher-name {
+  display: block;
+  font-size: 12.5px;
+  font-weight: 700;
+  color: #0f172a;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.uninova-teacher-subject {
+  display: block;
+  font-size: 11px;
+  color: #64748b;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.uninova-mail-btn {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.uninova-mail-btn:hover {
+  background: #e0e7ff;
+  border-color: #c7d2fe;
+}
+
+/* Sidebar Purpose Card */
+.uninova-purpose-card {
+  margin: 12px;
+  padding: 14px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 4px 14px rgba(79, 70, 229, 0.3);
+}
+
+.uninova-purpose-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.2);
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+
+.uninova-purpose-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.uninova-purpose-title {
+  font-size: 12px;
+  font-weight: 800;
+  margin: 0;
+  color: #ffffff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.uninova-purpose-desc {
+  font-size: 10px;
+  margin: 2px 0 0;
+  color: rgba(255, 255, 255, 0.8);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.uninova-purpose-arrow-btn {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: grid;
+  place-items: center;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* Header Elements */
+.uninova-semester-chip {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+}
+
+.uninova-semester-icon {
+  color: #64748b;
+  display: grid;
+  place-items: center;
+}
+
+.uninova-semester-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.uninova-semester-title {
+  font-size: 11.5px;
+  font-weight: 700;
+  color: #0f172a;
+  line-height: 1.1;
+}
+
+.uninova-semester-subtitle {
+  font-size: 10px;
+  color: #64748b;
+  line-height: 1.1;
+}
+
+.uninova-profile-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.uninova-profile-info {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.uninova-user-name {
+  font-size: 12.5px;
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1.1;
+}
+
+.uninova-user-role {
+  font-size: 10.5px;
+  color: #64748b;
+  line-height: 1.1;
+}
+
+/* SaaS Footer */
+.uninova-saas-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 16px;
+  border-top: 1px solid #e2e8f0;
+  font-size: 12px;
+  color: #64748b;
+  margin-top: 8px;
+}
+
+.uninova-footer-links {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.uninova-footer-links a {
+  color: #64748b;
+  text-decoration: none;
+}
+
+.uninova-footer-links a:hover {
+  color: #4f46e5;
+}
+
+/* Modal Backdrop & Teacher Dialog */
+.uninova-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(4px);
+  z-index: 999;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+}
+
+.uninova-modal-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 24px;
+  max-width: 460px;
+  width: 100%;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.uninova-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.uninova-modal-header h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.uninova-modal-close {
+  background: #f1f5f9;
+  border: none;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #64748b;
+}
+
+.uninova-modal-sub {
+  font-size: 12px;
+  color: #64748b;
+  margin: 0 0 16px;
+}
+
+.uninova-modal-textarea {
+  width: 100%;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  padding: 12px;
+  font-family: inherit;
+  font-size: 13px;
+  outline: none;
+  margin-top: 6px;
+}
+
+.uninova-modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+/* Auth Modal Pro Max Luxury Standard */
+.uninova-modal-card.auth-popup {
+  max-width: 460px;
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  padding: 28px 32px 30px;
+  box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.25), 0 0 0 1px rgba(15, 23, 42, 0.05);
+  animation: uninovaModalPop 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes uninovaModalPop {
+  0% {
+    opacity: 0;
+    transform: scale(0.96) translateY(8px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.uninova-auth-modal-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.uninova-brand-badge {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 17px;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 4px 12px rgba(2, 132, 199, 0.3);
+  flex-shrink: 0;
+}
+
+.uninova-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.uninova-modal-header h3 {
+  margin: 0;
+  font-size: 19px;
+  font-weight: 800;
+  color: #0f172a;
+  letter-spacing: -0.02em;
+}
+
+.uninova-modal-close {
+  background: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 700;
+  color: #64748b;
+  display: grid;
+  place-items: center;
+  transition: all 0.15s ease;
+}
+
+.uninova-modal-close:hover {
+  background: #e2e8f0;
+  color: #0f172a;
+  transform: rotate(90deg);
+}
+
+.uninova-modal-sub {
+  font-size: 13.5px;
+  color: #64748b;
+  line-height: 1.5;
+  margin: 0 0 22px;
+}
+
+.uninova-modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.uninova-auth-field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.uninova-auth-label {
+  font-size: 12.5px;
+  font-weight: 700;
+  color: #1e293b;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.uninova-auth-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.uninova-auth-input-icon {
+  position: absolute;
+  left: 14px;
+  color: #94a3b8;
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+}
+
+.uninova-auth-input {
+  width: 100%;
+  height: 46px;
+  padding: 10px 14px 10px 42px;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 12px;
+  background: #f8fafc;
+  color: #0f172a;
+  font-size: 14px;
+  font-family: inherit;
+  font-weight: 500;
+  outline: none;
+  transition: all 0.15s ease;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.03);
+}
+
+.uninova-auth-input:focus {
+  background: #ffffff;
+  border-color: #0284c7;
+  box-shadow: 0 0 0 4px rgba(2, 132, 199, 0.15), inset 0 1px 2px rgba(0, 0, 0, 0.02);
+}
+
+.uninova-auth-input::placeholder {
+  color: #94a3b8;
+  font-weight: 400;
+}
+
+.uninova-auth-persistence-note {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  color: #0369a1;
+  background: #f0f9ff;
+  border: 1px solid #bae6fd;
+  padding: 10px 14px;
+  border-radius: 10px;
+  line-height: 1.4;
+  margin-top: 4px;
+}
+
+.uninova-auth-persistence-note span {
+  font-size: 15px;
+}
+
+.uninova-modal-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 10px;
+  padding-top: 12px;
+  border-top: 1px solid #f1f5f9;
+}
+
+.uninova-modal-success {
+  padding: 14px 16px;
+  background: #ecfdf5;
+  border: 1px solid #a7f3d0;
+  border-radius: 12px;
+  color: #065f46;
+  font-size: 13.5px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  animation: uninovaModalPop 0.2s ease;
+}
+
+.uninova-dropdown-item.primary-action {
+  color: #4f46e5;
+  font-weight: 700;
+  background: #f8fafc;
+  width: 100%;
+  text-align: left;
+  border: none;
+  cursor: pointer;
+  padding: 10px 14px;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.uninova-dropdown-item.primary-action:hover {
+  background: #eef2ff;
+}
+
+.uninova-modal-success {
+  padding: 16px;
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  border-radius: 10px;
+  color: #166534;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* Dedicated Tab Pane */
+.uninova-tab-pane {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.uninova-tab-header {
+  margin-bottom: 8px;
+}
+
+.uninova-tab-title {
+  font-size: 24px;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0 0 4px;
+}
+
+.uninova-tab-subtitle {
+  font-size: 14px;
+  color: #64748b;
+  margin: 0;
+}
+
+.uninova-professors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 16px;
+}
+
+.uninova-prof-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.uninova-prof-card-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.uninova-prof-name {
+  font-size: 15px;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0;
+}
+
+.uninova-prof-badge {
+  font-size: 11px;
+  font-weight: 600;
+  color: #4f46e5;
+  background: #e0e7ff;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.uninova-prof-details p {
+  margin: 4px 0;
+  font-size: 12.5px;
+  color: #475569;
+}
+
+.uninova-prof-details a {
+  color: #4f46e5;
+  text-decoration: none;
+}
+
+/* ==========================================================================
+   NOTION-STYLE WEEKLY KANBAN TASK & TIME MANAGEMENT SYSTEM (UI/UX PRO MAX)
+   ========================================================================== */
+
+.uninova-kanban-header-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 12px 16px;
+  background: #ffffff;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+}
+
+.uninova-kanban-actions-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.uninova-select-filter {
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+  border-radius: 7px;
+  padding: 5px 10px;
+  font-size: 10.5px;
+  font-weight: 700;
+  color: #0f172a;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.02);
+  transition: all 0.15s ease;
+  height: 34px;
+}
+
+.uninova-select-filter:focus {
+  border-color: #2563eb;
+  background: #ffffff;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.12);
+}
+
+.uninova-view-pills {
+  display: flex;
+  background: #f1f5f9;
+  border-radius: 7px;
+  padding: 2px;
+  gap: 2px;
+}
+
+.uninova-view-pill {
+  background: transparent;
+  border: none;
+  padding: 4px 9px;
+  border-radius: 5px;
+  font-size: 10px;
+  font-weight: 700;
+  color: #475569;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  height: 30px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.uninova-view-pill.active {
+  background: #0f172a;
+  color: #ffffff;
+  box-shadow: 0 1px 4px rgba(15, 23, 42, 0.15);
+}
+
+.uninova-notion-kanban-board {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 6px;
+  width: 100%;
+  min-height: 440px;
+  align-items: start;
+  overflow-x: visible;
+  padding-bottom: 6px;
+}
+
+.uninova-notion-column {
+  background: #f8fafc;
+  border: 1px solid #f1f5f9;
+  border-radius: 9px;
+  padding: 6px 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.02);
+  transition: all 0.15s ease;
+}
+
+.uninova-notion-column.today-col {
+  background: #eff6ff;
+  border: 1px solid #93c5fd;
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.05);
+}
+
+.uninova-notion-col-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 6px;
+  background: #ffffff;
+  border: 1px solid #f1f5f9;
+  border-radius: 6px;
+}
+
+.uninova-notion-column.today-col .uninova-notion-col-header {
+  background: #dbeafe;
+  border: 1px solid #bfdbfe;
+}
+
+.uninova-col-title-wrap {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.uninova-col-day-name {
+  font-size: 9.5px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  color: #0f172a;
+}
+
+.uninova-today-pill {
+  background: #2563eb;
+  color: #ffffff;
+  font-size: 7.5px;
+  font-weight: 800;
+  padding: 1px 4px;
+  border-radius: 3px;
+  letter-spacing: 0.3px;
+}
+
+.uninova-col-counter {
+  font-size: 8.5px;
+  font-weight: 800;
+  color: #0f172a;
+  background: #e2e8f0;
+  border-radius: 99px;
+  padding: 1px 5px;
+}
+
+.uninova-notion-column.today-col .uninova-col-counter {
+  background: #bfdbfe;
+  color: #1e3a8a;
+}
+
+.uninova-notion-col-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+  min-height: 40px;
+  min-width: 0;
+}
+
+.uninova-notion-empty-col {
+  font-size: 8.5px;
+  color: #64748b;
+  font-weight: 500;
+  font-style: italic;
+  text-align: center;
+  padding: 10px 4px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 6px;
+  border: 1px dashed #f1f5f9;
+  cursor: pointer;
+}
+
+.uninova-notion-card {
+  background: #ffffff;
+  border: 1px solid #f1f5f9;
+  border-radius: 7px;
+  padding: 6px 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.03);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+  min-width: 0;
+}
+
+.uninova-notion-card:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 3px 6px rgba(15, 23, 42, 0.05);
+  border-color: #cbd5e1;
+}
+
+.uninova-notion-card.completed {
+  background: #f8fafc;
+  opacity: 0.72;
+  border: 1px dashed #cbd5e1;
+}
+
+.uninova-notion-card.tema-draft {
+  background: #faf5ff;
+  border: 1px dashed #c084fc;
+  box-shadow: 0 2px 6px rgba(168, 85, 247, 0.05);
+}
+
+.uninova-notion-card.class-card {
+  border-left-width: 2px;
+}
+
+.uninova-notion-card.class-card.blue {
+  border-left-color: #2563eb;
+}
+
+.uninova-notion-card.class-card.green {
+  border-left-color: #059669;
+}
+
+.uninova-notion-card.class-card.purple {
+  border-left-color: #7c3aed;
+}
+
+.uninova-notion-card.class-card.rose {
+  border-left-color: #e11d48;
+}
+
+.uninova-notion-card.class-card.orange {
+  border-left-color: #d97706;
+}
+
+.uninova-notion-card-tag-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3px;
+}
+
+.uninova-notion-tag {
+  font-size: 8px;
+  font-weight: 700;
+  padding: 1px 5px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
+  max-width: 90px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.uninova-notion-tag.blue {
+  background: #dbeafe;
+  color: #1d4ed8;
+  border: 1px solid #bfdbfe;
+}
+
+.uninova-notion-tag.green {
+  background: #d1fae5;
+  color: #047857;
+  border: 1px solid #a7f3d0;
+}
+
+.uninova-notion-tag.purple {
+  background: #ede9fe;
+  color: #6d28d9;
+  border: 1px solid #ddd6fe;
+}
+
+.uninova-notion-tag.rose {
+  background: #ffe4e6;
+  color: #be123c;
+  border: 1px solid #fecdd3;
+}
+
+.uninova-notion-tag.orange {
+  background: #ffedd5;
+  color: #c2410c;
+  border: 1px solid #fed7aa;
+}
+
+.uninova-notion-tag-muted {
+  font-size: 8px;
+  color: #64748b;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.uninova-class-type-tag {
+  font-size: 8px;
+  color: #334155;
+  font-weight: 800;
+  text-transform: uppercase;
+  background: #e2e8f0;
+  border: 1px solid #cbd5e1;
+  padding: 1px 5px;
+  border-radius: 3px;
+}
+
+.uninova-priority-badge {
+  font-size: 8px;
+  font-weight: 700;
+  padding: 1px 5px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+.uninova-priority-badge.alta {
+  background: #fee2e2;
+  color: #b91c1c;
+  border: 1px solid #fca5a5;
+}
+
+.uninova-priority-badge.media {
+  background: #fef3c7;
+  color: #b45309;
+  border: 1px solid #fde68a;
+}
+
+.uninova-priority-badge.normal {
+  background: #dcfce7;
+  color: #15803d;
+  border: 1px solid #86efac;
+}
+
+.uninova-notion-card-title {
+  font-size: 10.5px;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.uninova-notion-card-title.muted {
+  color: #475569;
+}
+
+.uninova-notion-card-title.line-through {
+  text-decoration: line-through;
+  color: #94a3b8;
+}
+
+.uninova-notion-card-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 9.5px;
+  color: #475569;
+}
+
+.uninova-notion-card-meta time {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  background: #f8fafc;
+  border: 1px solid #f1f5f9;
+  color: #1e293b;
+  font-weight: 700;
+  padding: 1px 4px;
+  border-radius: 3px;
+  align-self: flex-start;
+  font-size: 8.5px;
+}
+
+.uninova-card-note {
+  font-size: 8.5px;
+  color: #334155;
+  background: #f8fafc;
+  padding: 3px 5px;
+  border-radius: 3px;
+  border: 1px solid #f1f5f9;
+  border-left: 2px solid #3b82f6;
+  margin-top: 2px;
+  line-height: 1.3;
+}
+
+.uninova-notion-task-main {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+}
+
+.uninova-notion-checkbox-wrap {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding-top: 1px;
+}
+
+.uninova-notion-checkbox {
+  width: 13px;
+  height: 13px;
+  cursor: pointer;
+  accent-color: #2563eb;
+}
+
+.uninova-notion-task-content {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.uninova-delete-card-btn {
+  background: transparent;
+  border: none;
+  color: #94a3b8;
+  font-size: 10px;
+  cursor: pointer;
+  padding: 1px 4px;
+  border-radius: 3px;
+  transition: all 0.15s ease;
+}
+
+.uninova-delete-card-btn:hover {
+  color: #dc2626;
+  background: #fee2e2;
+}
+
+.uninova-btn-accept-tema {
+  background: #7e22ce;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 5px 9px;
+  font-size: 9.5px;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 1px 4px rgba(126, 34, 206, 0.2);
+  transition: all 0.15s ease;
+}
+
+.uninova-btn-accept-tema:hover {
+  background: #6b21a8;
+  transform: translateY(-1px);
+}
+
+.uninova-notion-add-card-btn {
+  background: #ffffff;
+  border: 1px dashed #cbd5e1;
+  border-radius: 6px;
+  padding: 5px 6px;
+  font-size: 9.5px;
+  font-weight: 700;
+  color: #1e293b;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.15s ease;
+}
+
+.uninova-notion-add-card-btn:hover {
+  background: #0f172a;
+  color: #ffffff;
+  border-color: #0f172a;
+  border-style: solid;
+}
+
+.uninova-settings-wrapper {
+  max-width: 600px;
+}
+
+/* RESPONSIVE DESIGN (PRO MAX BREAKPOINTS) */
+@media (max-width: 1150px) {
+  .uninova-saas-layout {
+    grid-template-columns: 1fr;
+  }
+  
+  .uninova-saas-aside {
+    order: 2;
+  }
+
+  .uninova-hero-priority-card {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .uninova-hero-graphic {
+    display: none;
+  }
+}
+
+@media (max-width: 820px) {
+  .uninova-hero-priority-card {
+    grid-template-columns: 1fr;
+  }
+
+  .uninova-schedule-row {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .uninova-dual-subgrid {
+    grid-template-columns: 1fr;
+  }
+
+  .uninova-quick-cards-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 580px) {
+  .uninova-greeting-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .uninova-greeting-quote {
+    text-align: left;
+  }
+
+  .uninova-schedule-row {
+    grid-template-columns: 1fr;
+  }
+
+  .uninova-performance-body {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .uninova-donut-wrap {
+    margin-bottom: 8px;
+  }
+
+  .uninova-quick-cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .uninova-jarvis-chips-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Pure White Luxury Modal Theme */
+.uninova-modal-card,
+.uninova-modal-card.auth-popup {
+  background: #ffffff !important;
+  color: #0f172a !important;
+  border: 1px solid #e2e8f0 !important;
+  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.12), 0 4px 12px rgba(15, 23, 42, 0.04) !important;
+}
+
+.uninova-auth-modal-title h3,
+.uninova-modal-card h2,
+.uninova-modal-card h3,
+.uninova-modal-header h3 {
+  color: #0f172a !important;
+  font-weight: 800 !important;
+}
+
+.uninova-auth-label {
+  color: #334155 !important;
+  font-size: 0.88rem !important;
+  font-weight: 700 !important;
+  display: block !important;
+  margin-bottom: 6px !important;
+  letter-spacing: 0.01em !important;
+}
+
+.uninova-modal-sub {
+  color: #64748b !important;
+  font-size: 0.9rem !important;
+  line-height: 1.55 !important;
+}
+
+.uninova-auth-input,
+.uninova-modal-textarea {
+  background: #ffffff !important;
+  border: 1px solid #cbd5e1 !important;
+  color: #0f172a !important;
+  border-radius: 10px !important;
+  font-size: 0.95rem !important;
+  font-weight: 600 !important;
+  outline: none !important;
+}
+
+.uninova-auth-input:focus,
+.uninova-modal-textarea:focus {
+  border-color: #0284c7 !important;
+  box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.15) !important;
+}
+
+/* ==========================================================================
+   DISCORD-LIKE SLIDING TASK DRAWER & COLLABORATIVE CHANNEL (LIGHT LUXURY)
+   ========================================================================== */
+.uninova-drawer-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.45);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  z-index: 99999;
+  display: flex;
+  justify-content: flex-end;
+  animation: fadeIn 0.2s ease;
+  cursor: pointer;
+}
+
+.uninova-discord-drawer {
+  width: min(540px, 100vw);
+  height: 100vh;
+  background: #ffffff;
+  border-left: 1px solid #e2e8f0;
+  box-shadow: -12px 0 40px rgba(15, 23, 42, 0.12);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  animation: slideInRight 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  color: #0f172a;
+  cursor: default;
+  z-index: 100000;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleUpModal {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.uninova-drawer-header {
+  padding: 18px 24px;
+  border-bottom: 1px solid #f1f5f9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+}
+
+.uninova-drawer-header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.uninova-drawer-close-btn {
+  background: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  color: #64748b;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.uninova-drawer-close-btn:hover {
+  background: #fee2e2;
+  color: #ef4444;
+  border-color: #fca5a5;
+}
+
+.uninova-drawer-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background: #ffffff;
+}
+
+.uninova-drawer-section {
+  background: #f8fafc;
+  border: 1px solid #f1f5f9;
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+}
+
+.uninova-drawer-title {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0;
+  line-height: 1.35;
+  letter-spacing: -0.3px;
+}
+
+.uninova-drawer-meta-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.uninova-drawer-meta-item {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  padding: 10px 14px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.meta-label {
+  font-size: 0.74rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #64748b;
+}
+
+.meta-val {
+  font-size: 0.95rem;
+  color: #0284c7;
+  font-weight: 800;
+}
+
+.uninova-weight-select {
+  background: transparent;
+  border: none;
+  color: #0284c7;
+  font-size: 0.95rem;
+  font-weight: 800;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.uninova-weight-select option {
+  background: #ffffff;
+  color: #0f172a;
+}
+
+.uninova-drawer-notes-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.uninova-drawer-notes-textarea {
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  color: #0f172a;
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  resize: vertical;
+  outline: none;
+}
+
+.uninova-drawer-notes-textarea:focus {
+  border-color: #0284c7;
+  box-shadow: 0 0 0 2px rgba(2, 132, 199, 0.15);
+}
+
+/* Discord Section */
+.uninova-discord-section {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+}
+
+.uninova-discord-header {
+  padding: 12px 18px;
+  background: #f8fafc;
+  border-bottom: 1px solid #e2e8f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.uninova-discord-channel-info {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.discord-hash {
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: #64748b;
+}
+
+.discord-live-pill {
+  font-size: 0.68rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 2px 6px;
+  border-radius: 6px;
+  background: #dcfce7;
+  color: #16a34a;
+  border: 1px solid #bbf7d0;
+  margin-left: 6px;
+}
+
+.discord-sub {
+  font-size: 0.72rem;
+  color: #64748b;
+}
+
+.uninova-discord-messages-feed {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-height: 280px;
+  overflow-y: auto;
+  background: #ffffff;
+}
+
+.uninova-discord-message {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.uninova-discord-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 0.82rem;
+  flex-shrink: 0;
+}
+
+.uninova-discord-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.uninova-discord-msg-meta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 2px;
+}
+
+.discord-author {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.discord-role-badge {
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 1px 5px;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.discord-role-badge.docente {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.discord-role-badge.monitor {
+  background: #e0f2fe;
+  color: #0284c7;
+}
+
+.discord-role-badge.estudiante {
+  background: #f1f5f9;
+  color: #475569;
+}
+
+.discord-timestamp {
+  font-size: 0.7rem;
+  color: #94a3b8;
+  margin-left: auto;
+}
+
+.discord-text {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #334155;
+  line-height: 1.45;
+  word-break: break-word;
+}
+
+.uninova-discord-chips {
+  display: flex;
+  gap: 6px;
+  padding: 0 16px 12px;
+  overflow-x: auto;
+  background: #ffffff;
+}
+
+.discord-chip-btn {
+  padding: 4px 10px;
+  border-radius: 6px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  color: #475569;
+  font-size: 0.74rem;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.15s ease;
+}
+
+.discord-chip-btn:hover {
+  background: #e0f2fe;
+  color: #0284c7;
+  border-color: #bae6fd;
+}
+
+.uninova-discord-composer {
+  padding: 12px 16px;
+  background: #f8fafc;
+  border-top: 1px solid #e2e8f0;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.uninova-discord-input {
+  flex: 1;
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  color: #0f172a;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 0.85rem;
+  outline: none;
+}
+
+.uninova-discord-input:focus {
+  border-color: #0284c7;
+  box-shadow: 0 0 0 2px rgba(2, 132, 199, 0.15);
+}
+
+.uninova-discord-send-btn {
+  background: #0284c7;
+  border: none;
+  color: #ffffff;
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.uninova-discord-send-btn:hover:not(:disabled) {
+  background: #0369a1;
+}
+
+.uninova-discord-send-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* ==========================================================================
+   NOTION DATABASE VIEW SWITCHER & VIEWS (KANBAN, TABLA, CALENDARIO, LISTA)
+   ========================================================================== */
+
+.uninova-notion-theme-wrap {
+  background-color: var(--notion-canvas-soft, #f6f5f4);
+  border-radius: 16px;
+  padding: 16px;
+  border: 1px solid var(--notion-hairline, #e6e6e6);
+  box-shadow: var(--notion-shadow-subtle, rgba(0, 0, 0, 0.01) 0 0.175px 1.04px, rgba(0, 0, 0, 0.02) 0 0.8px 2.92px, rgba(0, 0, 0, 0.04) 0 4px 18px);
+}
+
+.uninova-notion-database-header {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 16px;
+  background: var(--notion-surface, #ffffff);
+  border: 1px solid var(--notion-hairline, #e6e6e6);
+  border-radius: 12px;
+  padding: 12px 16px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.02);
+}
+
+.uninova-notion-db-top-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.uninova-notion-view-tabs {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  overflow-x: auto;
+  padding-bottom: 2px;
+}
+
+.uninova-notion-tab-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--notion-ink-muted, #615d59);
+  background: transparent;
+  border: 1px solid transparent;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.15s ease;
+}
+
+.uninova-notion-tab-btn:hover {
+  background: var(--notion-canvas-soft, #f6f5f4);
+  color: var(--notion-ink, #000000);
+}
+
+.uninova-notion-tab-btn.active {
+  background: var(--notion-surface, #ffffff);
+  color: var(--notion-primary, #0075de);
+  border-color: var(--notion-hairline, #e6e6e6);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  font-weight: 700;
+}
+
+.uninova-notion-db-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.uninova-notion-search-input {
+  height: 32px;
+  padding: 0 10px 0 28px;
+  border-radius: 6px;
+  border: 1px solid var(--notion-hairline, #e6e6e6);
+  background: var(--notion-surface, #ffffff);
+  color: var(--notion-ink, #000000);
+  font-size: 0.8rem;
+  outline: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  width: 180px;
+}
+
+.uninova-notion-search-input:focus {
+  border-color: var(--notion-primary, #0075de);
+  box-shadow: 0 0 0 2px rgba(0, 117, 222, 0.15);
+  width: 220px;
+}
+
+.uninova-notion-search-wrap {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.uninova-notion-search-icon {
+  position: absolute;
+  left: 8px;
+  font-size: 0.75rem;
+  color: var(--notion-ink-faint, #a39e98);
+  pointer-events: none;
+}
+
+/* ==========================================================================
+   VISTA TABLA NOTION
+   ========================================================================== */
+.uninova-notion-table-container {
+  background: var(--notion-surface, #ffffff);
+  border: 1px solid var(--notion-hairline, #e6e6e6);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+}
+
+.uninova-notion-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.84rem;
+  text-align: left;
+}
+
+.uninova-notion-table th {
+  background: var(--notion-canvas-soft, #f6f5f4);
+  color: var(--notion-ink-muted, #615d59);
+  font-weight: 600;
+  font-size: 0.74rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--notion-hairline, #e6e6e6);
+  border-right: 1px solid var(--notion-hairline, #e6e6e6);
+}
+
+.uninova-notion-table th:last-child {
+  border-right: none;
+}
+
+.uninova-notion-table td {
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--notion-hairline, #e6e6e6);
+  border-right: 1px solid var(--notion-hairline, #e6e6e6);
+  color: var(--notion-ink, #000000);
+  vertical-align: middle;
+}
+
+.uninova-notion-table td:last-child {
+  border-right: none;
+}
+
+.uninova-notion-table-row {
+  transition: background-color 0.12s ease;
+  cursor: pointer;
+}
+
+.uninova-notion-table-row:hover {
+  background-color: rgba(0, 117, 222, 0.03);
+}
+
+.uninova-notion-table-row.completed td {
+  color: var(--notion-ink-faint, #a39e98);
+}
+
+.uninova-notion-table-row.completed .uninova-table-task-name {
+  text-decoration: line-through;
+  color: var(--notion-ink-muted, #615d59);
+}
+
+.uninova-table-task-name {
+  font-weight: 600;
+  color: var(--notion-ink, #000000);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.uninova-table-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.72rem;
+  font-weight: 600;
+}
+
+/* ==========================================================================
+   VISTA CALENDARIO MENSUAL / SEMANAL NOTION
+   ========================================================================== */
+.uninova-notion-calendar-view {
+  background: var(--notion-surface, #ffffff);
+  border: 1px solid var(--notion-hairline, #e6e6e6);
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+}
+
+.uninova-notion-cal-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6px;
+}
+
+.uninova-notion-cal-day-cell {
+  background: var(--notion-canvas-soft, #f6f5f4);
+  border: 1px solid var(--notion-hairline, #e6e6e6);
+  border-radius: 8px;
+  min-height: 120px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  transition: all 0.15s ease;
+}
+
+.uninova-notion-cal-day-cell.today {
+  border-color: var(--notion-primary, #0075de);
+  background: #f0f7ff;
+}
+
+.uninova-notion-cal-day-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: var(--notion-ink-muted, #615d59);
+}
+
+.uninova-notion-cal-day-cell.today .uninova-notion-cal-day-header {
+  color: var(--notion-primary, #0075de);
+}
+
+.uninova-notion-cal-events-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+}
+
+.uninova-notion-cal-pill {
+  padding: 3px 6px;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border: 1px solid transparent;
+  transition: transform 0.1s ease;
+}
+
+.uninova-notion-cal-pill:hover {
+  transform: translateY(-1px);
+  filter: brightness(0.95);
+}
+
+/* ==========================================================================
+   VISTA LISTA RÁPIDA NOTION
+   ========================================================================== */
+.uninova-notion-list-view {
+  background: var(--notion-surface, #ffffff);
+  border: 1px solid var(--notion-hairline, #e6e6e6);
+  border-radius: 12px;
+  padding: 8px 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+}
+
+.uninova-notion-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 8px;
+  border-bottom: 1px solid var(--notion-hairline, #e6e6e6);
+  transition: background-color 0.12s ease;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.uninova-notion-list-item:last-child {
+  border-bottom: none;
+}
+
+.uninova-notion-list-item:hover {
+  background-color: var(--notion-canvas-soft, #f6f5f4);
+}
+
+.uninova-notion-list-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+  min-width: 0;
+}
+
+.uninova-notion-list-title {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--notion-ink, #000000);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.uninova-notion-list-title.completed {
+  text-decoration: line-through;
+  color: var(--notion-ink-faint, #a39e98);
+}
+
+.uninova-notion-list-tags {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+/* ==========================================================================
+   NOTION SIDE PEEK DRAWER & JARVIS AI TOOLBAR
+   ========================================================================== */
+.uninova-notion-side-peek-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.25);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 99999;
+  display: flex;
+  justify-content: flex-end;
+  animation: fadeIn 0.18s ease;
+  cursor: pointer;
+}
+
+.uninova-notion-side-peek-panel {
+  width: min(580px, 100vw);
+  height: 100vh;
+  background: var(--notion-surface, #ffffff);
+  border-left: 1px solid var(--notion-hairline, #e6e6e6);
+  box-shadow: var(--notion-shadow-drawer, -4px 0 24px rgba(15, 23, 42, 0.08), -1px 0 6px rgba(15, 23, 42, 0.03));
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  animation: slideInRight 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+  color: var(--notion-ink, #000000);
+  cursor: default;
+  z-index: 100000;
+}
+
+/* Vertical Notion Property Table */
+.uninova-notion-properties-grid {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  row-gap: 8px;
+  column-gap: 12px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--notion-hairline, #e6e6e6);
+  font-size: 0.84rem;
+}
+
+.uninova-notion-prop-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--notion-ink-muted, #615d59);
+  font-weight: 500;
+}
+
+.uninova-notion-prop-value {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--notion-ink, #000000);
+}
+
+.uninova-notion-prop-input {
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 4px 8px;
+  background: transparent;
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: var(--notion-ink, #000000);
+  outline: none;
+  width: 100%;
+  transition: all 0.15s ease;
+}
+
+.uninova-notion-prop-input:hover {
+  background: var(--notion-canvas-soft, #f6f5f4);
+  border-color: var(--notion-hairline, #e6e6e6);
+}
+
+.uninova-notion-prop-input:focus {
+  background: var(--notion-surface, #ffffff);
+  border-color: var(--notion-primary, #0075de);
+  box-shadow: 0 0 0 2px rgba(0, 117, 222, 0.12);
+}
+
+/* Jarvis AI Toolbar in Drawer */
+.uninova-jarvis-drawer-toolbar {
+  background: linear-gradient(135deg, #f0f7ff, #f8fafc);
+  border: 1px solid #bae6fd;
+  border-radius: 10px;
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 12px 0;
+}
+
+.uninova-jarvis-toolbar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--notion-primary, #0075de);
+}
+
+.uninova-jarvis-tools-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.uninova-jarvis-tool-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 10px;
+  border-radius: 6px;
+  background: var(--notion-surface, #ffffff);
+  border: 1px solid var(--notion-hairline, #e6e6e6);
+  color: var(--notion-ink-secondary, #31302e);
+  font-size: 0.76rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.uninova-jarvis-tool-btn:hover {
+  background: #e0f2fe;
+  color: #0284c7;
+  border-color: #bae6fd;
+  transform: translateY(-1px);
+}
+
+/* Notion Block Notes Editor */
+.uninova-notion-block-editor {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.uninova-notion-editor-textarea {
+  width: 100%;
+  min-height: 140px;
+  border: 1px solid var(--notion-hairline, #e6e6e6);
+  border-radius: 8px;
+  padding: 12px;
+  font-family: inherit;
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: var(--notion-ink, #000000);
+  background: var(--notion-surface, #ffffff);
+  outline: none;
+  resize: vertical;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.uninova-notion-editor-textarea:focus {
+  border-color: var(--notion-primary, #0075de);
+  box-shadow: 0 0 0 2px rgba(0, 117, 222, 0.15);
+}
+
+/* Negative Letter Tracking for Headers */
+.uninova-greeting-title,
+.uninova-tab-title,
+.uninova-macro-title,
+.uninova-jarvis-name,
+.uninova-drawer-title {
+  letter-spacing: -0.625px;
+}
+
+/* Mobile Luxury Floating Dock & Responsive Overrides */
+@media (max-width: 768px) {
+  .uninova-mobile-dock {
+    display: block !important;
+  }
+
+  .uninova-saas-container {
+    padding-bottom: 90px !important;
+  }
+
+  .academic-page-container {
+    padding-bottom: 80px !important;
+  }
+
+  .uninova-discord-drawer {
+    width: 100% !important;
+    max-width: 100% !important;
+    border-radius: 16px 16px 0 0 !important;
+    top: auto !important;
+    bottom: 0 !important;
+    height: 88vh !important;
+    animation: slideUpMobile 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  }
+}
+
+@keyframes slideUpMobile {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}

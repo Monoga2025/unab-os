@@ -1,0 +1,154 @@
+/*
+ * University OS theme contract — Single Source of Brand Truth
+ *
+ * Change the primitive values in this file to re-theme the complete product.
+ * Components must consume semantic or component tokens, never raw colours.
+ */
+:root {
+  /* Primitives — Ultra-Clean Luxury Indigo & Lavender */
+  --primitive-lavender-950: #0f172a;
+  --primitive-lavender-900: #1e1b4b;
+  --primitive-lavender-800: #312e81;
+  --primitive-lavender-700: #4338ca;
+  --primitive-lavender-600: #6366f1;
+  --primitive-lavender-500: #818cf8;
+  --primitive-lavender-300: #c7d2fe;
+  --primitive-lavender-100: #e0e7ff;
+  --primitive-lavender-050: #eef2ff;
+
+  --primitive-slate-950: #090e17;
+  --primitive-slate-900: #0f172a;
+  --primitive-slate-800: #1e293b;
+  --primitive-slate-700: #334155;
+  --primitive-slate-600: #475569;
+  --primitive-slate-500: #64748b;
+  --primitive-slate-400: #94a3b8;
+  --primitive-slate-300: #cbd5e1;
+  --primitive-slate-200: #e2e8f0;
+  --primitive-slate-100: #f1f5f9;
+  --primitive-slate-050: #f8fafc;
+  --primitive-white: #ffffff;
+  --primitive-app: #fafafa;
+
+  --primitive-blue-100: #e0f2fe;
+  --primitive-blue-500: #0284c7;
+  --primitive-green-100: #dcfce7;
+  --primitive-green-500: #16a34a;
+  --primitive-peach-100: #fef3c7;
+  --primitive-peach-500: #d97706;
+  --primitive-pink-100: #fee2e2;
+  --primitive-pink-500: #dc2626;
+
+  /* Typography Scale */
+  --font-sans: -apple-system, BlinkMacSystemFont, "Plus Jakarta Sans", "Inter", "Segoe UI", Roboto, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  /* Spacing Scale */
+  --space-2xs: 4px;
+  --space-xs: 8px;
+  --space-sm: 12px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+
+  /* Border Radius */
+  --radius-xs: 6px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --radius-2xl: 24px;
+  --radius-pill: 9999px;
+
+  /* Semantic tokens — the public theme controls */
+  --color-bg-app: var(--primitive-app);
+  --color-bg-surface: var(--primitive-white);
+  --color-bg-subtle: var(--primitive-slate-050);
+  --color-bg-inverse: var(--primitive-lavender-900);
+  --color-text: var(--primitive-slate-950);
+  --color-text-muted: var(--primitive-slate-600);
+  --color-text-dim: var(--primitive-slate-400);
+  --color-text-inverse: var(--primitive-white);
+  --color-border: var(--primitive-slate-200);
+  --color-border-soft: var(--primitive-slate-100);
+  --color-border-focus: var(--primitive-lavender-300);
+  --color-primary: var(--primitive-lavender-600);
+  --color-primary-strong: var(--primitive-lavender-700);
+  --color-primary-soft: var(--primitive-lavender-100);
+  --color-primary-subtle: var(--primitive-lavender-050);
+  --color-link: var(--primitive-lavender-700);
+  --color-success: var(--primitive-green-500);
+  --color-success-soft: var(--primitive-green-100);
+  --color-warning: var(--primitive-peach-500);
+  --color-warning-soft: var(--primitive-peach-100);
+  --color-info: var(--primitive-blue-500);
+  --color-info-soft: var(--primitive-blue-100);
+  --color-danger: var(--primitive-pink-500);
+  --color-danger-soft: var(--primitive-pink-100);
+
+  /* Shadows */
+  --shadow-xs: 0 1px 2px color-mix(in srgb, var(--primitive-slate-950) 4%, transparent);
+  --shadow-sm: 0 2px 4px color-mix(in srgb, var(--primitive-slate-950) 5%, transparent);
+  --shadow-md: 0 4px 12px color-mix(in srgb, var(--primitive-slate-950) 7%, transparent);
+  --shadow-lg: 0 10px 25px color-mix(in srgb, var(--primitive-slate-950) 8%, transparent);
+  --shadow-card: 0 8px 24px color-mix(in srgb, var(--color-bg-inverse) 6%, transparent);
+
+  /* Component tokens */
+  --app-bg: var(--color-bg-app);
+  --app-panel: var(--color-bg-inverse);
+  --app-card: var(--color-bg-surface);
+  --app-border: var(--color-border);
+  --app-border-strong: var(--color-border-focus);
+  --app-text: var(--color-text);
+  --app-muted: var(--color-text-muted);
+  --app-dim: var(--color-text-dim);
+  --app-blue: var(--color-primary);
+  --app-purple: var(--color-primary);
+  --app-green: var(--color-success);
+  --button-primary-bg: var(--color-primary);
+  --button-primary-fg: var(--color-text-inverse);
+  --field-bg: var(--color-bg-subtle);
+  --field-fg: var(--color-text);
+  --interactive-soft-bg: var(--color-primary-subtle);
+  --interactive-soft-fg: var(--color-primary-strong);
+  --study-plan-bg: var(--color-bg-subtle);
+  --study-session-bg: var(--color-bg-subtle);
+  --study-action-bg: var(--color-primary-soft);
+  --study-action-fg: var(--color-primary-strong);
+  --tutor-context-bg: var(--color-bg-subtle);
+  --tutor-message-bg: var(--color-bg-subtle);
+  --tutor-user-message-bg: var(--color-primary-subtle);
+  --tutor-document-bg: var(--color-bg-subtle);
+  --progress-control-bg: var(--color-bg-subtle);
+  --progress-icon-bg: var(--color-primary-subtle);
+  --progress-icon-fg: var(--color-primary-strong);
+  --jarvis-panel-bg: var(--color-bg-surface);
+  --jarvis-callout-bg: var(--color-bg-inverse);
+  --jarvis-report-bg: var(--color-bg-subtle);
+
+  /* Notion Design System Tokens */
+  --notion-canvas: #ffffff;
+  --notion-canvas-soft: #f6f5f4;
+  --notion-surface: #ffffff;
+  --notion-hairline: #e6e6e6;
+  --notion-primary: #0075de;
+  --notion-primary-active: #005bab;
+  --notion-ink: #000000;
+  --notion-ink-secondary: #31302e;
+  --notion-ink-muted: #615d59;
+  --notion-ink-faint: #a39e98;
+
+  /* Notion Sticker Palette */
+  --notion-sticker-purple: #d6b6f6;
+  --notion-sticker-teal: #2a9d99;
+  --notion-sticker-orange: #dd5b00;
+  --notion-sticker-pink: #ff64c8;
+  --notion-sticker-green: #1aae39;
+  --notion-sticker-sky: #62aef0;
+
+  /* Notion Micro-sombras Multicapa */
+  --notion-shadow-subtle: rgba(0,0,0,0.01) 0 0.175px 1.04px, rgba(0,0,0,0.02) 0 0.8px 2.92px, rgba(0,0,0,0.04) 0 4px 18px;
+  --notion-shadow-card: rgba(0,0,0,0.01) 0 0.175px 1.04px, rgba(0,0,0,0.02) 0 0.8px 2.92px, rgba(0,0,0,0.04) 0 4px 18px;
+  --notion-shadow-drawer: -4px 0 24px rgba(15, 23, 42, 0.08), -1px 0 6px rgba(15, 23, 42, 0.03);
+}

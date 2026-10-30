@@ -1,0 +1,35 @@
+{
+  "name": "university-os",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start -H 0.0.0.0 -p ${PORT:-3000}",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:python": "python -m unittest discover -s tests/python",
+    "typecheck": "tsc --noEmit",
+    "lint": "tsc --noEmit",
+    "import:tema:cloud": "node scripts/import-tema-cloud.mjs",
+    "sync:tema:cloud": "python scripts/sync_tema_cloud.py",
+    "test:db": "supabase test db --local"
+  },
+  "dependencies": {
+    "@supabase/ssr": "^0.12.4",
+    "@supabase/supabase-js": "^2.57.4",
+    "katex": "^0.18.10",
+    "lucide-react": "^1.45.0",
+    "next": "16.3.5",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.18.0",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "playwright": "^1.63.0",
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
+  }
+}

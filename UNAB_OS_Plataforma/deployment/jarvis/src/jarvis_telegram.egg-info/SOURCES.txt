@@ -1,0 +1,17 @@
+pyproject.toml
+src/jarvis/__init__.py
+src/jarvis/assistant.py
+src/jarvis/bot.py
+src/jarvis/coaching.py
+src/jarvis/config.py
+src/jarvis/db.py
+src/jarvis/formatting.py
+src/jarvis/parsing.py
+src/jarvis/tema_materials.py
+src/jarvis/university_os_bridge.py
+src/jarvis_telegram.egg-info/PKG-INFO
+src/jarvis_telegram.egg-info/SOURCES.txt
+src/jarvis_telegram.egg-info/dependency_links.txt
+src/jarvis_telegram.egg-info/entry_points.txt
+src/jarvis_telegram.egg-info/requires.txt
+src/jarvis_telegram.egg-info/top_level.txt
